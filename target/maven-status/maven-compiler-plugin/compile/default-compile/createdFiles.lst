@@ -1,0 +1,12 @@
+com/taskmanager/task_management/repository/InMemoryTaskRepository.class
+com/taskmanager/task_management/TaskManagementApplication.class
+com/taskmanager/task_management/controller/TaskController.class
+com/taskmanager/task_management/repository/TaskRepository.class
+com/taskmanager/task_management/exception/TaskNotFoundException.class
+com/taskmanager/task_management/model/TaskStatus.class
+com/taskmanager/task_management/model/Task$TaskBuilder.class
+com/taskmanager/task_management/service/TaskServiceImpl.class
+com/taskmanager/task_management/dto/TaskRequest.class
+com/taskmanager/task_management/model/Task.class
+com/taskmanager/task_management/service/TaskService.class
+com/taskmanager/task_management/exception/GlobalExceptionHandler.class

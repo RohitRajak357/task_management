@@ -1,0 +1,4 @@
+com/taskmanager/task_management/InMemoryTaskRepositoryTest.class
+com/taskmanager/task_management/TaskControllerTest.class
+com/taskmanager/task_management/TaskManagementApplicationTests.class
+com/taskmanager/task_management/TaskServiceImplTest.class

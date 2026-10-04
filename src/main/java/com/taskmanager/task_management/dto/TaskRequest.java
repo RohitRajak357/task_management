@@ -4,9 +4,11 @@ import com.taskmanager.task_management.model.TaskStatus;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 
 import java.time.LocalDate;
 
+@Data
 public class TaskRequest {
 
     @NotBlank(message = "Title is mandatory")
@@ -29,16 +31,4 @@ public class TaskRequest {
         this.status = status;
         this.dueDate = dueDate;
     }
-
-    // Getters
-    public String getTitle() { return title; }
-    public String getDescription() { return description; }
-    public TaskStatus getStatus() { return status; }
-    public LocalDate getDueDate() { return dueDate; }
-
-    // Setters
-    public void setTitle(String title) { this.title = title; }
-    public void setDescription(String description) { this.description = description; }
-    public void setStatus(TaskStatus status) { this.status = status; }
-    public void setDueDate(LocalDate dueDate) { this.dueDate = dueDate; }
 }

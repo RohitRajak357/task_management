@@ -3,9 +3,15 @@ package com.taskmanager.task_management.model;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Task {
 
     private String id;
@@ -20,31 +26,6 @@ public class Task {
     @NotNull(message = "Due date is mandatory")
     @Future(message = "Due date must be in the future")
     private LocalDate dueDate;
-
-    // Constructors
-    public Task() {}
-
-    public Task(String id, String title, String description, TaskStatus status, LocalDate dueDate) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.status = status;
-        this.dueDate = dueDate;
-    }
-
-    // Getters
-    public String getId() { return id; }
-    public String getTitle() { return title; }
-    public String getDescription() { return description; }
-    public TaskStatus getStatus() { return status; }
-    public LocalDate getDueDate() { return dueDate; }
-
-    // Setters
-    public void setId(String id) { this.id = id; }
-    public void setTitle(String title) { this.title = title; }
-    public void setDescription(String description) { this.description = description; }
-    public void setStatus(TaskStatus status) { this.status = status; }
-    public void setDueDate(LocalDate dueDate) { this.dueDate = dueDate; }
 
     // Builder
     public static TaskBuilder builder() { return new TaskBuilder(); }
